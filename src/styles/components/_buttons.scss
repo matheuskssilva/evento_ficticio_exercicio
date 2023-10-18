@@ -1,0 +1,13 @@
+@use '../variables';
+.button {
+    color: variables.$colorWhite;
+    font-weight: bold;
+    font-size: 16px;
+    transition: .7s ease;
+    &:hover {
+        color: variables.$colorBlue;
+    }
+    @media (max-width: 767px) {
+        font-size: 13px;
+    }
+}

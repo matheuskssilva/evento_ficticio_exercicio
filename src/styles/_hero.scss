@@ -1,0 +1,115 @@
+@use 'variables';
+.hero {
+    background-color: variables.$bgColor;
+    height: 800px;
+    position: relative;
+    .container {
+        position: relative;
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: variables.$bgColor;
+            z-index: 1;
+            box-shadow: 0px 10px 35px -5px rgba(0, 0, 0, 0.75);
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 40px 0;
+                gap: 70px;
+                text-transform: uppercase;
+                @media (max-width: 767px) {
+                    gap: 30px;
+                }
+            }
+        }
+    }
+    &__text {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: sans-serif;
+        font-size: 12px;
+        gap: 50px;
+        padding-top: 220px;
+        h2,
+        p {
+            width: 900px;
+            font-weight: 800;
+            font-size: 18px;
+            color: variables.$colorWhite;
+            text-align: center;
+            @media (max-width: 767px) {
+                width: 290px;
+            }
+        }
+        p {
+            font-size: 18px;
+            text-align: left;
+            width: 600px;
+            @media (max-width: 767px) {
+                width: 320px;
+                font-size: 12px;
+            }
+        }
+        h2 {
+            text-transform: uppercase;
+            font-family: variables.$fontPrimary;
+            letter-spacing: 2px;
+        }
+    }
+    .hero__text__contagem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h2 {
+            text-transform: uppercase;
+            margin-right: 400px;
+            color: variables.$colorBlue;
+            @media (max-width: 767px) {
+                margin-right: 50px;
+            }
+        }
+        &__cronometro {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 38px;
+            margin-top: 50px;
+            border-radius: 20px;
+            box-shadow: 0px 17px 17px 1px rgba(0, 0, 0, 0.71);
+            gap: 50px;
+            background-color: variables.$bgSecondary;
+            color: variables.$colorBlue;
+            @media (max-width: 767px) {
+                width: 320px;
+                gap: 10px;
+            }
+            .text_cronometro,
+            .number_cronometro {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                span {
+                    font-size: 30px;
+                    font-weight: 400;
+                    @media (max-width: 767px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+            h1 {
+                font-size: 14px;
+                font-weight: 400;
+                @media (max-width: 767px) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

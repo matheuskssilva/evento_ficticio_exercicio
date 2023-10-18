@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Aniversário</title>
+    <link rel="stylesheet" href="/src/styles/main.scss">
+</head>
+
+<body>
+    <section class="header">
+        <div class="hero">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li>
+                            <a class="button" href="#">Inicio</a>
+                        </li>
+                        <li>
+                            <a class="button" href="#info">Informações</a>
+                        </li>
+                        <li>
+                            <a class="button" href="#localizacao">Localização</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hero__text">
+                <h2>Aniversário Tecnológico: O Futuro da Diversão</h2>
+                <p>Engage-se no evento de aniversário mais tecnológico de todos os tempos! O cronômetro está prestes a iniciar a contagem regressiva para o futuro da diversão. <br>
+                    <div class="hero__text__contagem">
+                        <h2>Contagem Regressiva:</h2>
+                        <div class="hero__text__contagem__cronometro">
+                            <h1 class="text_cronometro"><span class="number_cronometro" id="contadorDias"> </span>Dias</h1>
+                            :
+                            <h1 class="text_cronometro"><span class="number_cronometro" id="contadorHoras"> </span>Horas</h1>
+                            :
+                            <h1 class="text_cronometro"><span class="number_cronometro" id="contadorMinutos"> </span>Minutos</h1>
+                            :
+                            <h1 class="text_cronometro"><span class="number_cronometro" id="contadorSegundos"> </span>Segundos</h1>
+                            <h1 class="eventoExpirado"><span id="eventoExpirado"></span></h1>
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section class="informacoes" id="info">
+        <div class="informacoes__container">
+            <img src="./images/imagem_informacoes.jpg" alt="Evento Tecnológico">
+
+            <div class="informacoes__container__text">
+
+                <h1>Informações do Evento</h1>
+
+                <h2>
+                    Tecnologia de Ponta:
+                </h2>
+                <p>
+                    Prepare-se para uma experiência tecnológica de outro nível. Teremos demonstrações de gadgets de última geração, realidade virtual, inteligência artificial e muito mais.
+                </p>
+                <h2>
+                    Palestrantes Especiais
+                </h2>
+                <p>
+                    Convidamos especialistas e pioneiros da indústria para compartilhar suas visões sobre o futuro da tecnologia.
+                </p>
+                <h2>
+                    Oficinas e Workshops
+                </h2>
+                <p>
+                    Participe de sessões práticas onde você pode aprender habilidades tecnológicas, desde programação até robótica.
+                </p>
+                <h2>
+                    Gastronomia Futurista:
+                </h2>
+                <p>
+                    A comida e bebida serão igualmente futurísticas, com pratos preparados por robôs e coquetéis elaborados com a ajuda da inteligência artificial.
+                </p>
+                <h2>
+                    Prêmios e Brindes:
+                </h2>
+                <p>
+                    Não perca os sorteios e brindes especiais, incluindo gadgets e dispositivos de alta tecnologia.
+                </p>
+                <h2>
+                    Contagem Regressiva Especial:
+                </h2>
+                <p>
+                    À meia-noite, faremos uma contagem regressiva épica para celebrar o aniversário de Mathesu e o futuro brilhante da tecnologia.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="localizacao" id="localizacao">
+        <div class="text_localizacao">
+            <h1>Localização</h1>
+            <p>
+                A Chácara Primavera Faustino é o local ideal para celebrar em grande estilo! Com uma atmosfera serena e com toda a tecnologia de ponta que você adora, esta chácara oferece o ambiente perfeito para um evento inesquecível. Ao lado se encontra a Localização
+                do local! Basta clicar no Maps e ele ja começa a te redirecionar para o local do evento. Estou te esperando!!
+            </p>
+
+        </div>
+        <iframe class="maps__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14710.752117403152!2d-47.3534641!3d-22.8140209!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c898c05f97af65%3A0x507ce9f7d2961329!2sCh%C3%A1cara%20Primavera%20Faustino!5e0!3m2!1spt-BR!2sbr!4v1697554221119!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>
